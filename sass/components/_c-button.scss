@@ -1,0 +1,11 @@
+.c-button {
+  font-family: $font-family-2;
+  text-transform: uppercase;
+
+  &.-white {
+    color: $color-5;
+    background-color: $color-4;
+    padding: 16px 20px;
+    position: relative;
+  }
+}

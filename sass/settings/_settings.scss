@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400,500,700,900');
+
+$font-family-1: 'Roboto', sans-serif;;
+$font-family-2: 'Montserrat', sans-serif;
+
+// $font-size-tiny: 10px;
+$font-size-xxsmall: 12px;
+$font-size-xsmall: 15px;
+$font-size-small: 18px;
+
+$font-size-large-small: 24px;
+
+$font-size-medium: 30px;
+$font-size-x-medium: 40px;
+$font-size-big: 50px;
+$font-size-huge: 120px;
+
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 700;
+
+// Colors
+
+$color-1: #e94c29;
+$color-2: #ef903a;
+$color-3: #f1f4f5;
+$color-4: #fff;
+$color-5: #333;
+
+
+// Grid-Wrap
+$max-width: 1040px;
+$wrap-mobile: 20px;
+$wrap-tablet: 50px;
+$wrap-desktop: 80px;
+
+// Break Points
+$breakpoint-mobile-small: 320px;
+$breakpoint-mobile-large: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+// Media queries
+$mq-mobile-small: 'screen and (min-width: #{$breakpoint-mobile-small})';
+$mq-mobile-large: 'screen and (min-width: #{$breakpoint-mobile-large})';
+$mq-tablet: 'screen and (min-width: #{$breakpoint-tablet})';
+$mq-laptop: 'screen and (min-width: #{$breakpoint-laptop})';

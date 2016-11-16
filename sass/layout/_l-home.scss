@@ -1,0 +1,42 @@
+.l-home {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .lines {
+    position: relative;
+    margin-top: 50px;
+
+    &::before {
+      display: block;
+      content: '';
+      height: 1px;
+      width: 150px;
+      background-color: $color-4;
+      position: absolute;
+      top: 50%;
+      left: -150px;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      height: 1px;
+      width: 150px;
+      background-color: $color-4;
+      position: absolute;
+      top: 50%;
+      right: -150px;
+    }
+  }
+}
