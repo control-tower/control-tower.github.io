@@ -1,42 +1,109 @@
 .l-home {
-  width: 100%;
-  height: 100vh;
-  background-color: $color-1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-
-  img {
+  .cover {
     width: 100%;
-    max-width: 350px;
-  }
+    height: 100vh;
+    background-color: $color-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 
-  .lines {
-    position: relative;
-    margin-top: 50px;
-
-    &::before {
-      display: block;
-      content: '';
-      height: 1px;
-      width: 150px;
-      background-color: $color-4;
-      position: absolute;
-      top: 50%;
-      left: -150px;
+    img {
+      width: 100%;
+      max-width: 350px;
     }
 
-    &::after {
-      display: block;
-      content: '';
-      height: 1px;
-      width: 150px;
-      background-color: $color-4;
-      position: absolute;
-      top: 50%;
-      right: -150px;
+    .lines {
+      position: relative;
+      margin-top: 60px;
+
+      &::before {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 150px;
+        background-color: $color-4;
+        position: absolute;
+        top: 50%;
+        left: -150px;
+      }
+
+      &::after {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 150px;
+        background-color: $color-4;
+        position: absolute;
+        top: 50%;
+        right: -150px;
+      }
+    }
+  }
+
+  .info {
+
+    h1 {
+      font-family: $font-family-1;
+      font-size: $font-size-x-medium;
+      margin-bottom: 40px;
+    }
+
+    .step-1,
+    .step-2,
+    .step-3 {
+      display: flex;
+      margin-bottom: 80px;
+      justify-content: space-between;
+
+      p {
+        font-family: $font-family-1;
+        font-weight: $font-weight-light;
+        line-height: 1.5;
+      }
+
+      .info {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+      }
+
+      .box {
+        flex-basis: calc(50% - 50px);
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        img {
+          width: 70%;
+          max-width: 280px;
+        }
+      }
+    }
+
+    .step-3 {
+      .box {
+        img{
+          width: 80%;
+          max-width: 340px;
+        }
+      }
+    }
+  }
+
+  .quote {
+    background-color: $color-1;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $color-4;
+      font-family: $font-family-2;
+      font-size: $font-size-medium;
+      text-align: center;
     }
   }
 }
